@@ -1,0 +1,17 @@
+      this.Remove = function (id) {
+            collection[id] = null;
+            collection.remove(id);
+            return this.List();
+        };
+
+        this.List = function (filter) {
+            return collection;
+        };
+
+        this.Get = function (id) {
+            return collection[id];
+        };
+
+        this.Add(collect);
+        return this.List();
+    };
